@@ -143,7 +143,7 @@ function App() {
                   : newKaryawan.nama_karyawan
               }
               onChange={handleInputChange}
-              required
+              
             />
             {validationErrors.nama_karyawan && (
               <p style={{ color: "red" }}>
@@ -160,7 +160,7 @@ function App() {
                 editingKaryawan ? editingKaryawan.jabatan : newKaryawan.jabatan
               }
               onChange={handleInputChange}
-              required
+              
             />
             {validationErrors.jabatan && (
               <p style={{ color: "red" }}>{validationErrors.jabatan[0]}</p>
@@ -173,7 +173,7 @@ function App() {
               placeholder="Gaji"
               value={editingKaryawan ? editingKaryawan.gaji : newKaryawan.gaji}
               onChange={handleInputChange}
-              required
+              
             />
             {validationErrors.gaji && (
               <p style={{ color: "red" }}>{validationErrors.gaji[0]}</p>
@@ -190,7 +190,7 @@ function App() {
                   : newKaryawan.tanggal_masuk
               }
               onChange={handleInputChange}
-              required
+              
             />
             {validationErrors.tanggal_masuk && (
               <p style={{ color: "red" }}>
